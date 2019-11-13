@@ -102,6 +102,7 @@ namespace Vendorlink.QueryToFile
                 propNames.Add(property.Name);
                 sb.Append($"{property.Name};");
             }
+            sb.AppendLine();
 
             foreach (JObject jObject in results)
             {
